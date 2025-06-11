@@ -26,6 +26,8 @@ else {
 	}
 	else if(keyboard_check(vk_space)) {
 		sprite_index = MermaidBlue_Attack;
+		
+		alarm[0] = 15;
 		global.is_player_attacking = true;
 	}
 	else {

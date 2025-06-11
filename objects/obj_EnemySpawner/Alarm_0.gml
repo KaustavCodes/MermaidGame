@@ -11,7 +11,9 @@ var item_sprite = choose(spt_LionFishMove, spt_GoldFishMove, spt_Shark1FishMove,
 var x_point = choose(300, 500, 700);
 
 instance_create_layer(1920+300, x_point, "Enemy_Instances", obj_Enemy, {
-	sprite_index: item_sprite
+	sprite_index: item_sprite,
+	image_xscale: 0.4,
+	image_yscale: 0.4
 });
 
 

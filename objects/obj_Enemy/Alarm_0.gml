@@ -1,4 +1,0 @@
-/// 
-
-
-isDead = true;

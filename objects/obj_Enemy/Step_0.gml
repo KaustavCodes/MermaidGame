@@ -31,6 +31,24 @@ if(isDead) {
 	y += 15;
 	speed = 0;
 }
+else if (isAttacking) {
+    switch(sprite_index)
+    {
+        case spt_GoldFishMove:
+            sprite_index = spt_GoldFishAttack;
+            break;
+        case spt_LionFishMove:
+            sprite_index = spt_LionFishAttack;
+            break;
+        case spt_Shark1FishMove:
+            sprite_index = spt_Shark1FishAttack;
+            break;
+        case spt_Shark2FishMove:
+            sprite_index = spt_Shark2FishAttack;
+            break;
+    }
+    speed = -10;
+}
 else {
 	if(distance_to_object(obj_Player) < 200)
 	{
